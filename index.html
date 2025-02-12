@@ -15,6 +15,24 @@
             color: white;
             padding: 10px 0;
             text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #45a049;
+            border-radius: 4px;
         }
         footer {
             background-color: #333;
@@ -63,15 +81,19 @@
 
 <header>
     <h1>Clothing Production Customer Helpline</h1>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<section class="about-us">
+<section id="about" class="about-us">
     <h2>About Us</h2>
     <p>Welcome to the Clothing Production Customer Helpline. We provide support and assistance for all your clothing production needs. Whether you need help with fabric selection, production timelines, or order tracking, our team is here to help you every step of the way.</p>
     <p>Our mission is to deliver high-quality clothing with timely and reliable customer service to ensure your production goes smoothly. Get in touch with us today for personalized assistance.</p>
 </section>
 
-<section class="login-section">
+<section id="contact" class="login-section">
     <h2>Customer Login</h2>
     <form action="#" method="POST">
         <label for="username">Username:</label>
